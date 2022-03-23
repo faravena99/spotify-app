@@ -13,7 +13,7 @@ export class PlayListBodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    console.log(this.tracks)
   }
 
   changeSort(property: string): void {
