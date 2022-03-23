@@ -8,9 +8,14 @@ const routes: Routes = [
     path: 'auth', 
     loadChildren: () => import('./modules/auth/login/auth.module').then(m => m.AuthModule) },
   { 
-    path: '',
+    path: 'home',
     component: HomeComponent ,
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) }
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule) },
+
+    {
+      path: '**',
+      redirectTo: 'auth/login'
+    }
 
 ];
 

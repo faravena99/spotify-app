@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/tracks'
+    redirectTo: '/auth/login'
   }
 ];
 

@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
   initLoginForm() {
     this.loginForm = new FormGroup(
       {
-        email: new FormControl('', [Validators.required, Validators.email]),
-        password: new FormControl('', [Validators.required, Validators.minLength(3)])
+        email: new FormControl('escalab@test.com', [Validators.required, Validators.email]),
+        password: new FormControl('12345678', [Validators.required, Validators.minLength(3)])
       }
       )
   }
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
       const { tokenSession, data } = res;
       this.cookie.set('token', tokenSession, 4, '/');
       this.cookie.set('user', email);
-      this.router.navigate(['home']);
+      this.router.navigate(['home/tracks']);
 
     }, err => {
         this.error = true
