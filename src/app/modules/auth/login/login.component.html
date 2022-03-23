@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-center generalContainer">
+    <form class="col-12 col-md-12 col-lg-5" [formGroup]="loginForm" (submit)="login()" novalidate>
+        <h1>MusicApp
+            <mat-icon>music</mat-icon>
+        </h1>
+        <img class="logo" src="../../../assets/img/logo.png" alt="login-ico">
+        <mat-form-field class="inputContainer" appearance="outline">
+            <mat-label>correo electronico</mat-label>
+            <input matInput type="email" placeholder="ejemplo@gmail.com" formControlName="email" autocomplete="off">
+            <mat-icon matSuffix>email</mat-icon>
+
+        </mat-form-field>
+
+        <mat-form-field class="inputContainer" appearance="outline">
+            <mat-label>password</mat-label>
+            <input matInput type="password" [type]="hide ? 'password' : 'text'" placeholder="ingresa tu contraseña" formControlName="password" autocomplete="off">
+            <mat-icon style="cursor: pointer;" matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+
+        <div class="col-12 d-flex justify-content-center py-4">
+            <button type="submit" class="btn-submit" [disabled]="loginForm.invalid">Ingresar</button>
+        </div>
+    </form>
+
+</div>
