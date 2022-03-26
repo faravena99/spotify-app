@@ -98,7 +98,7 @@ export class MultimediaService {
   //TODO: Funciones publicas
 
   public setAudio(track: TrackModel): void {
-    console.log('🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍', track);
+    console.log(track);
     this.audio.src = track.url
     this.audio.play()
   }

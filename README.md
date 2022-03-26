@@ -10,4 +10,6 @@ Login --> Credenciales
 email: escalab@test.com
 password: 12345678
 
+el apartado de musica electronica se puede reproducir y escuchar la musica.
+
 Disfrutar!!!!
