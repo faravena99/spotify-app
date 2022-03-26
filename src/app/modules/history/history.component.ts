@@ -17,7 +17,7 @@ export class HistoryComponent implements OnInit {
 
   reciveData(event: string) {
    this.listResults = this.searchService.searchTracks(event);
-  
+
   }
 
 }
