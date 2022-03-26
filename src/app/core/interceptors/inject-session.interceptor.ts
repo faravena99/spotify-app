@@ -21,7 +21,6 @@ export class InjectSessionInterceptor implements HttpInterceptor {
         {
           setHeaders: {
             authorization: `Bearer ${token}`,
-            CUSTOM_HEADER: 'HOLA'
           }
         }
       )

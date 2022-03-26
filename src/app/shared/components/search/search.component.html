@@ -1,0 +1,7 @@
+<div class="search-wrapper">
+    <input (ngModelChange)="callSearch($event)" [(ngModel)]="src" type="text" placeholder="Artistas, Canciones o podcast">
+    <br>
+    <div>
+        Resultado: {{src}}
+    </div>
+</div>

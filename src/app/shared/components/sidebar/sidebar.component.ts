@@ -15,12 +15,12 @@ export class SidebarComponent implements OnInit {
     {
       name: 'Buscar',
       icon: 'uil-search',
-      router: ['/home', 'favorites']
+      router: ['/home', 'history']
     },
     {
       name: 'Biblioteca',
       icon: 'uil uil-chart',
-      router: ['/home', 'history']
+      router: ['/home', 'favorites']
     },
 
   ]

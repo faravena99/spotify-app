@@ -11,6 +11,8 @@ import { PlayListBodyComponent } from './components/play-list-body/play-list-bod
 import { RouterModule } from '@angular/router';
 import { OrderListPipe } from './pipe/order-list.pipe';
 import { ImgBrokenDirective } from './directives/img-broken.directive';
+import { SearchComponent } from './components/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -24,12 +26,14 @@ import { ImgBrokenDirective } from './directives/img-broken.directive';
     PlayListHeaderComponent,
     PlayListBodyComponent,
     OrderListPipe,
-    ImgBrokenDirective
+    ImgBrokenDirective,
+    SearchComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ], 
   exports: [
     HeaderComponent,
@@ -39,6 +43,7 @@ import { ImgBrokenDirective } from './directives/img-broken.directive';
     CardPlayerComponent,
     PlayListHeaderComponent,
     PlayListBodyComponent,
+    SearchComponent
   ]
 })
 export class SharedModule { }

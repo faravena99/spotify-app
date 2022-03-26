@@ -1,6 +1,6 @@
-import { TrackModel } from './../../core/models/tracks.model';
 import { EventEmitter, Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, Observer, Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
+import { TrackModel } from './../../core/models/tracks.model';
 
 
 @Injectable({
